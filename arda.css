@@ -5,7 +5,31 @@
 img {
     width:230px;
     height:150px;
+    float: left;
 }
+
+
+h1 {
+  float:left;
+  padding-left: 200px;
+  }
+
+  
+  h2 {
+    size: 1px;
+    float:left;
+    padding-left: 200px;
+  }
+
+
+
+h5 {
+   font-size: 30px;
+}
+
+
+
+
 .button1 {
 
     padding: 10px;
@@ -31,5 +55,58 @@ img {
 
 .container {
     color: #7C204A;
+    height: auto;
+    width: auto;
 
+.button-group{
+    display: flex;
+    gap: 15px; /* Butonlar arası boşluk */
+}
+
+/* Genel buton stili (ikisinde de kullanılıyor) */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* WhatsApp rengi */
+.whatsapp-btn {
+    background-color: #25D366;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe5a;
+}
+
+/* Telegram rengi */
+.telegram-btn {
+    background-color: #0088cc;
+}
+
+.telegram-btn:hover {
+    background-color: #0077b5;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover .icon {
+    transform: rotate(8deg) scale(1.1);
 }
